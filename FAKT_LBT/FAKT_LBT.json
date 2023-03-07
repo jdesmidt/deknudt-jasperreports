@@ -82,7 +82,7 @@
             "bestellingendetail": [
                 {
                     "Txt_ArtikelOmschrijving": "Item description",
-                    "Txt_ArtikelReferentie": "Artikelreferentie",
+                    "Txt_ArtikelReferentie": "Item reference",
                     "Txt_ArtikelEANCode": "EAN code",
                     "Txt_ArtikelCode": "Artikelcode",
                     "Txt_Aantal": "Qty",
