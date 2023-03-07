@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="FAKT_B2C_DOUANEINFO" pageWidth="595" pageHeight="842" columnWidth="495" leftMargin="80" rightMargin="20" topMargin="0" bottomMargin="0" uuid="c06b95da-5ea9-4459-9811-43a4fd684a68">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="FAKT_B2C"/>
+	<property name="net.sf.jasperreports.data.adapter" value="FAKT_B2C.xml"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<queryString language="json">
+		<![CDATA[factuur.douaneinfo]]>
+	</queryString>
+	<field name="Txt_Origine" class="java.lang.String">
+		<fieldDescription><![CDATA[Txt_Origine]]></fieldDescription>
+	</field>
+	<field name="Txt_Tarief" class="java.lang.String">
+		<fieldDescription><![CDATA[Txt_Tarief]]></fieldDescription>
+	</field>
+	<field name="Txt_Aantal" class="java.lang.String">
+		<fieldDescription><![CDATA[Txt_Aantal]]></fieldDescription>
+	</field>
+	<field name="Txt_Bedrag" class="java.lang.String">
+		<fieldDescription><![CDATA[Txt_Bedrag]]></fieldDescription>
+	</field>
+	<field name="Txt_NettoGewicht" class="java.lang.String">
+		<fieldDescription><![CDATA[Txt_NettoGewicht]]></fieldDescription>
+	</field>
+	<field name="OrigineEU" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="OrigineEU"/>
+		<fieldDescription><![CDATA[OrigineEU]]></fieldDescription>
+	</field>
+	<field name="GoederenCode" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="GoederenCode"/>
+		<fieldDescription><![CDATA[GoederenCode]]></fieldDescription>
+	</field>
+	<field name="Aantal" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="Aantal"/>
+		<fieldDescription><![CDATA[Aantal]]></fieldDescription>
+	</field>
+	<field name="Bedrag" class="java.math.BigDecimal">
+		<property name="net.sf.jasperreports.json.field.expression" value="Bedrag"/>
+		<fieldDescription><![CDATA[Bedrag]]></fieldDescription>
+	</field>
+	<field name="NettoGewicht" class="java.math.BigDecimal">
+		<property name="net.sf.jasperreports.json.field.expression" value="NettoGewicht"/>
+		<fieldDescription><![CDATA[NettoGewicht]]></fieldDescription>
+	</field>
+	<field name="BtwVermelding" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="BtwVermelding"/>
+		<fieldDescription><![CDATA[BtwVermelding]]></fieldDescription>
+	</field>
+	<field name="MuntCode" class="java.lang.String">
+		<fieldDescription><![CDATA[MuntCode]]></fieldDescription>
+	</field>
+	<field name="Txt_DouaneInfo" class="java.lang.String">
+		<fieldDescription><![CDATA[Txt_DouaneInfo]]></fieldDescription>
+	</field>
+	<background>
+		<band height="115">
+			<textField>
+				<reportElement x="-34" y="30" width="30" height="80" uuid="1eb0a01a-d27b-4b2e-886e-ecbf93b15a77">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" rotation="Left">
+					<font fontName="Source Sans Pro" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Txt_DouaneInfo}]]></textFieldExpression>
+			</textField>
+		</band>
+	</background>
+	<pageHeader>
+		<band height="20">
+			<textField textAdjust="StretchHeight">
+				<reportElement x="0" y="0" width="456" height="20" uuid="7e07aa62-319a-4e5d-b88d-24424bb1e51a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="69667b84-6db3-4a29-902a-88ff4c9608b3"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Source Sans Pro" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{BtwVermelding}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="23" splitType="Stretch">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+			<textField>
+				<reportElement x="0" y="0" width="86" height="23" uuid="6043d945-b001-4d19-b013-7971cb61b543"/>
+				<textElement textAlignment="Center">
+					<font fontName="Source Sans Pro" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Txt_Origine}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="92" y="0" width="86" height="23" uuid="fa7f5899-be0c-4712-a5e2-2935af845ac7"/>
+				<textElement textAlignment="Center">
+					<font fontName="Source Sans Pro" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Txt_Tarief}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="184" y="0" width="86" height="23" uuid="4d47689f-b720-4818-8620-abc53655f50e"/>
+				<textElement textAlignment="Center">
+					<font fontName="Source Sans Pro" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Txt_Aantal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="276" y="0" width="86" height="23" uuid="a80a7c25-ff0f-4fc8-8c9a-5dfc67562805"/>
+				<textElement textAlignment="Center">
+					<font fontName="Source Sans Pro" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Txt_Bedrag}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="370" y="0" width="86" height="23" uuid="a2efa118-707f-4fd6-a5fc-4607de1a3153"/>
+				<textElement textAlignment="Center">
+					<font fontName="Source Sans Pro" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Txt_NettoGewicht}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="86" height="20" uuid="5e2dc9c7-4383-4a9b-a4a7-f59983de3c6c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="69667b84-6db3-4a29-902a-88ff4c9608b3"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Source Sans Pro" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{OrigineEU}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="92" y="0" width="86" height="20" uuid="5c054d4c-142f-4123-aa81-86fed99fbb68">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6ac2de15-d828-4922-b1ae-dc809f3cc902"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Source Sans Pro" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{GoederenCode}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="184" y="0" width="86" height="20" uuid="053691d9-246c-4401-85ec-224d2d2578e2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b9d13eb7-d8ad-443a-ab2e-6b44a5ce38b9"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Source Sans Pro" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Aantal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="276" y="0" width="86" height="20" uuid="532d0629-73bb-4008-80c3-d30c37c22619">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6d9e08ca-49e3-46de-bfa1-267009c10ae6"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Source Sans Pro" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{MuntCode} + " " + new DecimalFormat("#,##0.00", new java.text.DecimalFormatSymbols(java.util.Locale.FRANCE)).format($F{Bedrag})]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="370" y="0" width="86" height="20" uuid="d541d1ae-3f59-408c-a37a-8dc430768c62">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="403e8509-8966-4edf-b24c-587176508918"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Source Sans Pro" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new DecimalFormat("#,##0.00", new java.text.DecimalFormatSymbols(java.util.Locale.FRANCE)).format($F{NettoGewicht})]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

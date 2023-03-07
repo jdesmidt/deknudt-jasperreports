@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="FAKT_B2C" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="0" uuid="de8eda5b-d69b-438f-b8f4-68c92701e738">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="FAKT_B2C"/>
+	<property name="net.sf.jasperreports.data.adapter" value="FAKT_B2C.xml"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<parameter name="DS_BESTELLINGEN" class="net.sf.jasperreports.engine.data.JsonDataSource" isForPrompting="false"/>
+	<parameter name="DS_DOUANEINFO" class="net.sf.jasperreports.engine.data.JsonDataSource"/>
+	<parameter name="DS_DETAILBESTELLINGEN" class="net.sf.jasperreports.engine.data.JsonDataSource"/>
+	<queryString language="json">
+		<![CDATA[factuur]]>
+	</queryString>
+	<field name="Txt_klantnummer" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="Txt_Klantnummer"/>
+		<fieldDescription><![CDATA[Txt_Klantnummer]]></fieldDescription>
+	</field>
+	<field name="Txt_factuurnummer" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="Txt_Factuurnummer"/>
+		<fieldDescription><![CDATA[Txt_Factuurnummer]]></fieldDescription>
+	</field>
+	<field name="Txt_Datum_factuur" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="Txt_Datum_factuur"/>
+		<fieldDescription><![CDATA[Txt_Datum_factuur]]></fieldDescription>
+	</field>
+	<field name="Txt_Leverdatum" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="Txt_Leverdatum"/>
+		<fieldDescription><![CDATA[Txt_Leverdatum]]></fieldDescription>
+	</field>
+	<field name="Txt_Gecumuleerde_jaaromzet" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="Txt_Gecumuleerde_jaaromzet"/>
+		<fieldDescription><![CDATA[Txt_Gecumuleerde_jaaromzet]]></fieldDescription>
+	</field>
+	<field name="Txt_Totaal_bestellingen" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="Txt_Totaal_bestellingen"/>
+		<fieldDescription><![CDATA[Txt_Totaal_bestellingen]]></fieldDescription>
+	</field>
+	<field name="Txt_Verzendkosten" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="Txt_Verzendkosten"/>
+		<fieldDescription><![CDATA[Txt_Verzendkosten]]></fieldDescription>
+	</field>
+	<field name="Txt_Korting_contant" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="Txt_Korting_contant"/>
+		<fieldDescription><![CDATA[Txt_Korting_contant]]></fieldDescription>
+	</field>
+	<field name="Txt_Belastbaar_bedrag" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="Txt_Belastbaar_bedrag"/>
+		<fieldDescription><![CDATA[Txt_Belastbaar_bedrag]]></fieldDescription>
+	</field>
+	<field name="Txt_BTW" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="Txt_BTW"/>
+		<fieldDescription><![CDATA[Txt_BTW]]></fieldDescription>
+	</field>
+	<field name="Txt_Totaal_te_betalen" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="Txt_Totaal_te_betalen"/>
+		<fieldDescription><![CDATA[Txt_Totaal_te_betalen]]></fieldDescription>
+	</field>
+	<field name="Txt_Uiterste_betaaldatum" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="Txt_Uiterste_betaaldatum"/>
+		<fieldDescription><![CDATA[Txt_Uiterste_betaaldatum]]></fieldDescription>
+	</field>
+	<field name="Txt_Met_vermelding" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="Txt_Met_vermelding"/>
+		<fieldDescription><![CDATA[Txt_Met_vermelding]]></fieldDescription>
+	</field>
+	<field name="Txt_Te_betalen_op" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="Txt_Te_betalen_op"/>
+		<fieldDescription><![CDATA[Txt_Te_betalen_op]]></fieldDescription>
+	</field>
+	<field name="Txt_FooterText" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="Txt_FooterText"/>
+		<fieldDescription><![CDATA[Txt_FooterText]]></fieldDescription>
+	</field>
+	<field name="Txt_DouaneInfo" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="Txt_DouaneInfo"/>
+		<fieldDescription><![CDATA[Txt_DouaneInfo]]></fieldDescription>
+	</field>
+	<field name="Txt_Detail_per_bestelling" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="Txt_Detail_per_bestelling"/>
+		<fieldDescription><![CDATA[Txt_Detail_per_bestelling]]></fieldDescription>
+	</field>
+	<field name="FactuurNummer" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="FactuurNummer"/>
+		<fieldDescription><![CDATA[FactuurNummer]]></fieldDescription>
+	</field>
+	<field name="FactuurTypeCode" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="FactuurTypeCode"/>
+		<fieldDescription><![CDATA[FactuurTypeCode]]></fieldDescription>
+	</field>
+	<field name="FactuurTypeText" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="FactuurTypeText"/>
+		<fieldDescription><![CDATA[FactuurTypeText]]></fieldDescription>
+	</field>
+	<field name="FactuurDatum" class="java.sql.Date">
+		<property name="net.sf.jasperreports.json.field.expression" value="FactuurDatum"/>
+		<fieldDescription><![CDATA[FactuurDatum]]></fieldDescription>
+	</field>
+	<field name="FactuurLeverDatum" class="java.sql.Date">
+		<property name="net.sf.jasperreports.json.field.expression" value="FactuurLeverDatum"/>
+		<fieldDescription><![CDATA[FactuurLeverDatum]]></fieldDescription>
+	</field>
+	<field name="FactuurVervalDatum" class="java.sql.Date">
+		<property name="net.sf.jasperreports.json.field.expression" value="FactuurVervalDatum"/>
+		<fieldDescription><![CDATA[FactuurVervalDatum]]></fieldDescription>
+	</field>
+	<field name="Txt_betalingswijze" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="Txt_betalingswijze"/>
+		<fieldDescription><![CDATA[Txt_betalingswijze]]></fieldDescription>
+	</field>
+	<field name="FactuurViaOverschrijving" class="java.lang.Boolean">
+		<property name="net.sf.jasperreports.json.field.expression" value="FactuurViaOverschrijving"/>
+		<fieldDescription><![CDATA[FactuurViaOverschrijving]]></fieldDescription>
+	</field>
+	<field name="FactuurOverschrijvingMededeling" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="FactuurOverschrijvingMededeling"/>
+		<fieldDescription><![CDATA[FactuurOverschrijvingMededeling]]></fieldDescription>
+	</field>
+	<field name="FactuurOverschrijvingIBAN" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="FactuurOverschrijvingIBAN"/>
+		<fieldDescription><![CDATA[FactuurOverschrijvingIBAN]]></fieldDescription>
+	</field>
+	<field name="FactuurOverschrijvingBIC" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="FactuurOverschrijvingBIC"/>
+		<fieldDescription><![CDATA[FactuurOverschrijvingBIC]]></fieldDescription>
+	</field>
+	<field name="KlantType" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="KlantType"/>
+		<fieldDescription><![CDATA[KlantType]]></fieldDescription>
+	</field>
+	<field name="KlantNummer" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="KlantNummer"/>
+		<fieldDescription><![CDATA[KlantNummer]]></fieldDescription>
+	</field>
+	<field name="KlantNaam" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="KlantNaam"/>
+		<fieldDescription><![CDATA[KlantNaam]]></fieldDescription>
+	</field>
+	<field name="KlantStraatNummer" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="KlantStraatNummer"/>
+		<fieldDescription><![CDATA[KlantStraatNummer]]></fieldDescription>
+	</field>
+	<field name="KlantStraatExtra" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="KlantStraatExtra"/>
+		<fieldDescription><![CDATA[KlantStraatExtra]]></fieldDescription>
+	</field>
+	<field name="KlantLandCode" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="KlantLandCode"/>
+		<fieldDescription><![CDATA[KlantLandCode]]></fieldDescription>
+	</field>
+	<field name="KlantPostCode" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="KlantPostCode"/>
+		<fieldDescription><![CDATA[KlantPostCode]]></fieldDescription>
+	</field>
+	<field name="KlantGemeente" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="KlantGemeente"/>
+		<fieldDescription><![CDATA[KlantGemeente]]></fieldDescription>
+	</field>
+	<field name="KlantBtwNummer" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="KlantBtwNummer"/>
+		<fieldDescription><![CDATA[KlantBtwNummer]]></fieldDescription>
+	</field>
+	<field name="KlantJaarOmzet" class="java.math.BigDecimal">
+		<property name="net.sf.jasperreports.json.field.expression" value="KlantJaarOmzet"/>
+		<fieldDescription><![CDATA[KlantJaarOmzet]]></fieldDescription>
+	</field>
+	<field name="GroupReferentieText" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="GroupReferentieText"/>
+		<fieldDescription><![CDATA[GroupReferentieText]]></fieldDescription>
+	</field>
+	<field name="GroupReferentieNummer" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="GroupReferentieNummer"/>
+		<fieldDescription><![CDATA[GroupReferentieNummer]]></fieldDescription>
+	</field>
+	<field name="GroupLid" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="GroupLid"/>
+		<fieldDescription><![CDATA[GroupLid]]></fieldDescription>
+	</field>
+	<field name="TotaalBestellingen" class="java.math.BigDecimal">
+		<property name="net.sf.jasperreports.json.field.expression" value="TotaalBestellingen"/>
+		<fieldDescription><![CDATA[TotaalBestellingen]]></fieldDescription>
+	</field>
+	<field name="TotaalVerzendkosten" class="java.math.BigDecimal">
+		<property name="net.sf.jasperreports.json.field.expression" value="TotaalVerzendkosten"/>
+		<fieldDescription><![CDATA[TotaalVerzendkosten]]></fieldDescription>
+	</field>
+	<field name="TotaalPercentageKortingContant" class="java.math.BigDecimal">
+		<property name="net.sf.jasperreports.json.field.expression" value="TotaalPercentageKortingContant"/>
+		<fieldDescription><![CDATA[TotaalPercentageKortingContant]]></fieldDescription>
+	</field>
+	<field name="TotaalKortingContant" class="java.math.BigDecimal">
+		<property name="net.sf.jasperreports.json.field.expression" value="TotaalKortingContant"/>
+		<fieldDescription><![CDATA[TotaalKortingContant]]></fieldDescription>
+	</field>
+	<field name="TotaalBelastbaarBedrag" class="java.math.BigDecimal">
+		<property name="net.sf.jasperreports.json.field.expression" value="TotaalBelastbaarBedrag"/>
+		<fieldDescription><![CDATA[TotaalBelastbaarBedrag]]></fieldDescription>
+	</field>
+	<field name="TotaalPercentageBTW" class="java.math.BigDecimal">
+		<property name="net.sf.jasperreports.json.field.expression" value="TotaalPercentageBTW"/>
+		<fieldDescription><![CDATA[TotaalPercentageBTW]]></fieldDescription>
+	</field>
+	<field name="TotaalBTWBedrag" class="java.math.BigDecimal">
+		<property name="net.sf.jasperreports.json.field.expression" value="TotaalBTWBedrag"/>
+		<fieldDescription><![CDATA[TotaalBTWBedrag]]></fieldDescription>
+	</field>
+	<field name="TotaalTeBetalen" class="java.math.BigDecimal">
+		<property name="net.sf.jasperreports.json.field.expression" value="TotaalTeBetalen"/>
+		<fieldDescription><![CDATA[TotaalTeBetalen]]></fieldDescription>
+	</field>
+	<field name="MuntCode" class="java.lang.String">
+		<fieldDescription><![CDATA[MuntCode]]></fieldDescription>
+	</field>
+	<field name="FirmaNaam" class="java.lang.String"/>
+	<field name="FirmaAdres" class="java.lang.String"/>
+	<field name="FirmaWebsite" class="java.lang.String"/>
+	<field name="FirmaMail" class="java.lang.String"/>
+	<field name="FirmaTelefoon" class="java.lang.String"/>
+	<field name="FirmaBtwNummer" class="java.lang.String"/>
+	<field name="FirmaBank" class="java.lang.String"/>
+	<field name="FirmaBankIban" class="java.lang.String"/>
+	<field name="FirmaBankBic" class="java.lang.String"/>
+	<field name="FactuurMetDouaneInfo" class="java.lang.Boolean"/>
+	<field name="KlantMetKlantgroep" class="java.lang.Boolean"/>
+	<field name="KlantFirma" class="java.lang.String"/>
+	<field name="FactuurMetJaarOmzet" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[FactuurMetJaarOmzet]]></fieldDescription>
+	</field>
+	<field name="Txt_InclusiefBTW" class="java.lang.String">
+		<fieldDescription><![CDATA[Txt_InclusiefBTW]]></fieldDescription>
+	</field>
+	<field name="TotaalGoederenInclBtw" class="java.math.BigDecimal"/>
+	<field name="Txt_Kortingscode" class="java.lang.String"/>
+	<field name="TotaalPercentageKortingscode" class="java.math.BigDecimal"/>
+	<field name="Txt_BTWincl" class="java.lang.String">
+		<fieldDescription><![CDATA[Txt_BTWincl]]></fieldDescription>
+	</field>
+	<field name="TotaalKortingscode" class="java.lang.String"/>
+	<field name="TotaalBedragKortingscode" class="java.math.BigDecimal"/>
+	<field name="logo" class="java.lang.String"/>
+	<field name="Txt_Pagina" class="java.lang.String"/>
+	<field name="Txt_Betaaldatum" class="java.lang.String"/>
+	<field name="Txt_BestellingNummer" class="java.lang.String"/>
+	<field name="Bestelling" class="java.lang.String">
+		<fieldDescription><![CDATA[Bestelling]]></fieldDescription>
+	</field>
+	<field name="Txt_UwRef" class="java.lang.String">
+		<fieldDescription><![CDATA[Txt_UwRef]]></fieldDescription>
+	</field>
+	<field name="BestelRef" class="java.lang.String">
+		<fieldDescription><![CDATA[BestelRef]]></fieldDescription>
+	</field>
+	<group name="Txt_factuurnummer">
+		<groupExpression><![CDATA[$F{Txt_factuurnummer}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="233" splitType="Stretch">
+			<rectangle>
+				<reportElement mode="Opaque" x="-20" y="-20" width="595" height="241" forecolor="#DAD6CD" backcolor="#DAD6CD" uuid="428e6e16-a41b-4430-b84d-667bc946749d"/>
+			</rectangle>
+			<textField>
+				<reportElement x="330" y="0" width="240" height="50" uuid="6c3d39dd-c86c-49cd-bfa2-a400ac6fec4c"/>
+				<textElement textAlignment="Left">
+					<font fontName="Source Sans Pro" size="30" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{FactuurTypeText}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="20" y="-10" width="210" height="80" uuid="b3c6ad14-82f7-48f3-bfed-7fa884b658e3"/>
+				<imageExpression><![CDATA[$F{logo}]]></imageExpression>
+			</image>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="330" y="76" width="236" height="20" uuid="fc1dc7b3-28f5-4675-a669-cb4be13154c2">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Source Sans Pro" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{KlantNaam}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="96" width="236" height="20" uuid="d8e793a8-4928-4fb9-aa0e-a8d332de1010">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Source Sans Pro" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{KlantStraatNummer}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="116" width="236" height="20" uuid="8b6234cc-7cd0-4baf-9cef-6e17be5acbaf">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Source Sans Pro" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{KlantStraatExtra}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="136" width="236" height="20" uuid="b6018e2a-75d7-4c5f-a02f-9e9163f9ded2">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Source Sans Pro" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{KlantLandCode} + "-" + $F{KlantPostCode} + " " + $F{KlantGemeente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="156" width="236" height="20" uuid="f397e9f0-96c1-4415-8a50-aed4bc3dc803">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<printWhenExpression><![CDATA[$F{KlantBtwNummer}.compareTo(new String("")) != 0]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="Source Sans Pro" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Txt_BTW} + ": " + $F{KlantBtwNummer}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="20" y="176" width="300" height="20" uuid="ca3f21ee-351b-47d2-b076-9503f4a3d4e0">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<printWhenExpression><![CDATA[$F{BestelRef}.compareTo(new String("")) != 0]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="Source Sans Pro" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Txt_UwRef} + ": " + $F{BestelRef}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="20" y="136" width="210" height="20" uuid="5df7c813-0f3c-491d-9282-adb278c9fd6b">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Source Sans Pro" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Txt_Datum_factuur} + ": " + new SimpleDateFormat("dd.MM.yyyy").format($F{FactuurDatum})]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="20" y="156" width="210" height="20" uuid="3720d031-28cf-4dc6-968a-f37bfa5db614">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Source Sans Pro" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Txt_Leverdatum} + ": " + new SimpleDateFormat("dd.MM.yyyy").format($F{FactuurLeverDatum})]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="20" y="116" width="210" height="20" uuid="723c0c85-e583-4a9a-b975-aee6c9149260">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Source Sans Pro" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Txt_factuurnummer} + ": " + $F{FactuurNummer}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="20" y="76" width="210" height="20" uuid="efba6f48-2356-4d1d-9783-cf21ae3a12f4">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Source Sans Pro" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Txt_klantnummer} + ": " + $F{KlantNummer}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="526" y="200" width="40" height="20" uuid="1e1cc21d-911b-4c3a-8992-69911109e9ef">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left">
+					<font fontName="Source Sans Pro" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" / " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="326" y="200" width="200" height="20" uuid="65edbe16-3ccf-40b0-ba44-e385e7c8522c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Source Sans Pro" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Txt_Pagina} + " " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="330" y="56" width="236" height="20" uuid="bf69d31f-5862-4afb-928d-4e7ef01187bf">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Source Sans Pro" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{KlantFirma}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="20" y="96" width="210" height="20" uuid="438a6a5e-d387-4395-b539-a438e7893cc8">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Source Sans Pro" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Txt_BestellingNummer} + ": " + $F{Bestelling}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="20" y="197" width="300" height="20" uuid="c985402a-7594-4796-9ad7-c9b723a66d15">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<printWhenExpression><![CDATA[$F{FactuurMetJaarOmzet} == true]]></printWhenExpression>
+				</reportElement>
+				<textElement>
+					<font fontName="Source Sans Pro" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Txt_Gecumuleerde_jaaromzet} + ": " + $F{MuntCode} + " " + new DecimalFormat("#,##0.00", new java.text.DecimalFormatSymbols(java.util.Locale.FRANCE)).format($F{KlantJaarOmzet})]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="93">
+			<subreport isUsingCache="false" overflowType="Stretch">
+				<reportElement x="-20" y="-5" width="595" height="60" uuid="14713aaa-7222-4f60-8fa2-f9b9c1c2ddc4"/>
+				<subreportExpression><![CDATA["FAKT_B2C_DETAILBESTELLINGEN.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="25">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<textField>
+				<reportElement x="344" y="5" width="196" height="20" uuid="02b4ff26-ba98-4bd2-9103-236822e00f52">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Source Sans Pro"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{MuntCode} + " " +new DecimalFormat("#,##0.00", new java.text.DecimalFormatSymbols(java.util.Locale.FRANCE)).format($F{TotaalGoederenInclBtw})]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="20" y="5" width="300" height="20" uuid="8403fc88-77ea-434a-9533-730f95948e52">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Source Sans Pro"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Txt_Totaal_bestellingen} + " (" + $F{Txt_BTWincl} + ")"]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="20" y="1" width="520" height="1" forecolor="#DAD6CD" uuid="36c9233b-dd5d-40e5-aea7-1062107c81d9">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+		</band>
+		<band height="20">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<printWhenExpression><![CDATA[$F{TotaalVerzendkosten}.compareTo(new BigDecimal(0)) != 0]]></printWhenExpression>
+			<textField>
+				<reportElement x="20" y="0" width="300" height="20" uuid="6b3c4759-ddee-4bc0-b883-7979b1116ee5">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Source Sans Pro"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Txt_Verzendkosten}  + " (" + $F{Txt_BTWincl} + ")"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="344" y="0" width="196" height="20" uuid="c5e94d9d-9594-40fa-8dbc-86586a4aef19">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Source Sans Pro"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{MuntCode} + " " + new DecimalFormat("#,##0.00", new java.text.DecimalFormatSymbols(java.util.Locale.FRANCE)).format($F{TotaalVerzendkosten})]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="20">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<printWhenExpression><![CDATA[$F{TotaalPercentageKortingscode}.compareTo(new BigDecimal(0)) != 0]]></printWhenExpression>
+			<textField>
+				<reportElement x="20" y="0" width="300" height="20" uuid="8855cba1-42cf-40ee-bbbc-cd43159164d8">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Source Sans Pro"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Txt_Kortingscode} + " " + $F{TotaalKortingscode} + " "+ $F{TotaalPercentageKortingscode} + "%"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="344" y="0" width="196" height="20" uuid="02871be8-15ea-4b22-9125-8f03a510546e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Source Sans Pro"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{MuntCode} + " " + new DecimalFormat("#,##0.00", new java.text.DecimalFormatSymbols(java.util.Locale.FRANCE)).format($F{TotaalBedragKortingscode})]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="26">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<textField>
+				<reportElement x="20" y="5" width="300" height="20" uuid="d6fdddac-14f5-49c2-8a7f-c72e1ff7bb0e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Source Sans Pro"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Txt_Belastbaar_bedrag}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="344" y="5" width="196" height="20" uuid="450378c2-e137-4f06-a1ab-10978b778c64">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Source Sans Pro"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{MuntCode} + " " + new DecimalFormat("#,##0.00", new java.text.DecimalFormatSymbols(java.util.Locale.FRANCE)).format($F{TotaalBelastbaarBedrag})]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="20" y="2" width="520" height="1" forecolor="#DAD6CD" uuid="832b235f-4880-457a-b98d-dff3159b461e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+		</band>
+		<band height="21">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<textField>
+				<reportElement x="344" y="1" width="196" height="20" uuid="01f199dd-5540-4252-91e9-b5f0c8d725ce">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Source Sans Pro"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{MuntCode} + " " + new DecimalFormat("#,##0.00", new java.text.DecimalFormatSymbols(java.util.Locale.FRANCE)).format($F{TotaalBTWBedrag})]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="20" y="1" width="300" height="20" uuid="d148fcc0-fa59-478b-8e3d-dbfa4c5f0115">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Source Sans Pro"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Txt_BTW} +" " + $F{TotaalPercentageBTW} + "%"]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="65">
+			<textField>
+				<reportElement x="20" y="5" width="300" height="20" uuid="b01c16fd-0c16-4a44-a4fa-207e9cbb6e68">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Source Sans Pro" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Txt_Totaal_te_betalen}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="344" y="5" width="196" height="20" uuid="574f5dca-1559-4586-a295-32a10a8f2bc8">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Source Sans Pro" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{MuntCode} + " " + new DecimalFormat("#,##0.00", new java.text.DecimalFormatSymbols(java.util.Locale.FRANCE)).format($F{TotaalTeBetalen})]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="20" y="25" width="520" height="1" forecolor="#DAD6CD" uuid="221fa0e9-bb76-46d3-a628-61253bf84d09">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="21" y="2" width="520" height="1" forecolor="#DAD6CD" uuid="329df2e3-b682-4647-9882-ec5d12bc1a81">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<textField>
+				<reportElement x="344" y="30" width="196" height="20" uuid="30d8e229-aa6d-416f-a8e3-da224b9b0598">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Source Sans Pro" size="11" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new SimpleDateFormat("dd.MM.yyyy").format($F{FactuurLeverDatum})]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="20" y="30" width="300" height="20" uuid="b6005069-8948-4e91-82f2-e9d6e20fb4f7">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Source Sans Pro" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Txt_Betaaldatum}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="28">
+			<textField textAdjust="StretchHeight">
+				<reportElement x="20" y="0" width="519" height="20" uuid="91e1c694-500e-4671-a479-fcb82f001623">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Source Sans Pro"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Txt_FooterText}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="70" splitType="Prevent">
+			<printWhenExpression><![CDATA[$F{FactuurMetDouaneInfo} == true]]></printWhenExpression>
+			<subreport isUsingCache="false" overflowType="Stretch">
+				<reportElement x="-20" y="10" width="595" height="60" uuid="dfd9127b-fdbb-4576-9d3d-47f171b53f49"/>
+				<subreportExpression><![CDATA["FAKT_B2C_DOUANEINFO.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="70" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<rectangle radius="0">
+				<reportElement positionType="FixRelativeToBottom" mode="Opaque" x="-20" y="0" width="595" height="70" forecolor="#DAD6CD" backcolor="#DAD6CD" uuid="d0b8351a-c384-4234-a473-fbaef821308d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</rectangle>
+			<textField>
+				<reportElement x="-20" y="6" width="595" height="16" uuid="99f89c68-4d6c-4ef8-9e0a-09576d5af5ea">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Source Sans Pro" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{FirmaNaam} + " | " + $F{FirmaAdres}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="-20" y="22" width="595" height="16" uuid="b688bc5b-406e-43ae-9c58-59930273f6b3">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Source Sans Pro" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{FirmaWebsite} + " | " + $F{FirmaMail} + " | " +$F{FirmaTelefoon}+ " | " +$F{FirmaBtwNummer}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="-20" y="38" width="595" height="16" uuid="0ecb8e0c-e469-4f40-b3b8-a25f86b98dd6">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Source Sans Pro" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{FirmaBank}+ " | " +$F{FirmaBankIban}+ " | " +$F{FirmaBankBic}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

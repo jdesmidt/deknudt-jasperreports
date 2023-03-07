@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="FAKT_DIC_DETAILBESTELLINGEN" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="0" bottomMargin="5" uuid="6ddf2cf9-8db8-4dc7-a16d-70c547116c61">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="FAKT_DIC"/>
+	<property name="net.sf.jasperreports.data.adapter" value="FAKT_DIC.xml"/>
+	<queryString language="json">
+		<![CDATA[factuur.bestellingendetail]]>
+	</queryString>
+	<field name="Txt_ArtikelReferentie" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="Txt_ArtikelReferentie"/>
+		<fieldDescription><![CDATA[Txt_ArtikelReferentie]]></fieldDescription>
+	</field>
+	<field name="Txt_ArtikelEANCode" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="Txt_ArtikelEANCode"/>
+		<fieldDescription><![CDATA[Txt_ArtikelEANCode]]></fieldDescription>
+	</field>
+	<field name="Txt_ArtikelCode" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="Txt_ArtikelCode"/>
+		<fieldDescription><![CDATA[Txt_ArtikelCode]]></fieldDescription>
+	</field>
+	<field name="Txt_Aantal" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="Txt_Aantal"/>
+		<fieldDescription><![CDATA[Txt_Aantal]]></fieldDescription>
+	</field>
+	<field name="Txt_Prijs" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="Txt_Prijs"/>
+		<fieldDescription><![CDATA[Txt_Prijs]]></fieldDescription>
+	</field>
+	<field name="Txt_Korting" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="Txt_Korting"/>
+		<fieldDescription><![CDATA[Txt_Korting]]></fieldDescription>
+	</field>
+	<field name="Txt_TotaalBruto" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="Txt_TotaalBruto"/>
+		<fieldDescription><![CDATA[Txt_TotaalBruto]]></fieldDescription>
+	</field>
+	<field name="Txt_TotaalNetto" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="Txt_TotaalNetto"/>
+		<fieldDescription><![CDATA[Txt_TotaalNetto]]></fieldDescription>
+	</field>
+	<field name="Txt_DouaneCode" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="Txt_DouaneCode"/>
+		<fieldDescription><![CDATA[Txt_DouaneCode]]></fieldDescription>
+	</field>
+	<field name="Txt_Origine" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="Txt_Origine"/>
+		<fieldDescription><![CDATA[Txt_Origine]]></fieldDescription>
+	</field>
+	<field name="Txt_BestellingNummer" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="Txt_BestellingNummer"/>
+		<fieldDescription><![CDATA[Txt_BestellingNummer]]></fieldDescription>
+	</field>
+	<field name="Txt_UwRef" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="Txt_UwRef"/>
+		<fieldDescription><![CDATA[Txt_UwRef]]></fieldDescription>
+	</field>
+	<field name="Txt_Subtotaal" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="Txt_Subtotaal"/>
+		<fieldDescription><![CDATA[Txt_Subtotaal]]></fieldDescription>
+	</field>
+	<field name="Txt_Getrouwheidskorting" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="Txt_Getrouwheidskorting"/>
+		<fieldDescription><![CDATA[Txt_Getrouwheidskorting]]></fieldDescription>
+	</field>
+	<field name="Txt_Orderkorting" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="Txt_Orderkorting"/>
+		<fieldDescription><![CDATA[Txt_Orderkorting]]></fieldDescription>
+	</field>
+	<field name="Txt_Verzendkosten" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="Txt_Verzendkosten"/>
+		<fieldDescription><![CDATA[Txt_Verzendkosten]]></fieldDescription>
+	</field>
+	<field name="BestellingAard" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="BestellingAard"/>
+		<fieldDescription><![CDATA[BestellingAard]]></fieldDescription>
+	</field>
+	<field name="BestellingNummer" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="BestellingNummer"/>
+		<fieldDescription><![CDATA[BestellingNummer]]></fieldDescription>
+	</field>
+	<field name="BestellingDatum" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="BestellingDatum"/>
+		<fieldDescription><![CDATA[BestellingDatum]]></fieldDescription>
+	</field>
+	<field name="BestellingReferentie" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="BestellingReferentie"/>
+		<fieldDescription><![CDATA[BestellingReferentie]]></fieldDescription>
+	</field>
+	<field name="ArtikelStam" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="ArtikelStam"/>
+		<fieldDescription><![CDATA[ArtikelStam]]></fieldDescription>
+	</field>
+	<field name="ArtikelSlip" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="ArtikelSlip"/>
+		<fieldDescription><![CDATA[ArtikelSlip]]></fieldDescription>
+	</field>
+	<field name="ArtikelAfm1" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="ArtikelAfm1"/>
+		<fieldDescription><![CDATA[ArtikelAfm1]]></fieldDescription>
+	</field>
+	<field name="ArtikelAfm2" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="ArtikelAfm2"/>
+		<fieldDescription><![CDATA[ArtikelAfm2]]></fieldDescription>
+	</field>
+	<field name="Artikel" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="Artikel"/>
+		<fieldDescription><![CDATA[Artikel]]></fieldDescription>
+	</field>
+	<field name="ArtikelEAN" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="ArtikelEAN"/>
+		<fieldDescription><![CDATA[ArtikelEAN]]></fieldDescription>
+	</field>
+	<field name="ArtikelReferentie" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="ArtikelReferentie"/>
+		<fieldDescription><![CDATA[ArtikelReferentie]]></fieldDescription>
+	</field>
+	<field name="ArtikelBlok" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="ArtikelBlok"/>
+		<fieldDescription><![CDATA[ArtikelBlok]]></fieldDescription>
+	</field>
+	<field name="BestellingHoeveelheid" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="BestellingHoeveelheid"/>
+		<fieldDescription><![CDATA[BestellingHoeveelheid]]></fieldDescription>
+	</field>
+	<field name="BestellingEenheidsprijs" class="java.math.BigDecimal">
+		<property name="net.sf.jasperreports.json.field.expression" value="BestellingEenheidsprijs"/>
+		<fieldDescription><![CDATA[BestellingEenheidsprijs]]></fieldDescription>
+	</field>
+	<field name="BestellingBruto" class="java.math.BigDecimal">
+		<property name="net.sf.jasperreports.json.field.expression" value="BestellingBruto"/>
+		<fieldDescription><![CDATA[BestellingBruto]]></fieldDescription>
+	</field>
+	<field name="BestellingNetto" class="java.math.BigDecimal">
+		<property name="net.sf.jasperreports.json.field.expression" value="BestellingNetto"/>
+		<fieldDescription><![CDATA[BestellingNetto]]></fieldDescription>
+	</field>
+	<field name="BestellingTotaalBruto" class="java.math.BigDecimal">
+		<property name="net.sf.jasperreports.json.field.expression" value="BestellingTotaalBruto"/>
+		<fieldDescription><![CDATA[BestellingTotaalBruto]]></fieldDescription>
+	</field>
+	<field name="BestellingTotaalNetto" class="java.math.BigDecimal">
+		<property name="net.sf.jasperreports.json.field.expression" value="BestellingTotaalNetto"/>
+		<fieldDescription><![CDATA[BestellingTotaalNetto]]></fieldDescription>
+	</field>
+	<field name="BestellingDouaneCode" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="BestellingDouaneCode"/>
+		<fieldDescription><![CDATA[BestellingDouaneCode]]></fieldDescription>
+	</field>
+	<field name="BestellingGoederenCode" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="BestellingGoederenCode"/>
+		<fieldDescription><![CDATA[BestellingGoederenCode]]></fieldDescription>
+	</field>
+	<field name="BestellingOrigineLand" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="BestellingOrigineLand"/>
+		<fieldDescription><![CDATA[BestellingOrigineLand]]></fieldDescription>
+	</field>
+	<field name="BestellingOrigineEU" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="BestellingOrigineEU"/>
+		<fieldDescription><![CDATA[BestellingOrigineEU]]></fieldDescription>
+	</field>
+	<field name="BestellingLand" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="BestellingLand"/>
+		<fieldDescription><![CDATA[BestellingLand]]></fieldDescription>
+	</field>
+	<field name="BestellingBuitenland" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="BestellingBuitenland"/>
+		<fieldDescription><![CDATA[BestellingBuitenland]]></fieldDescription>
+	</field>
+	<field name="BestellingSubtotaal" class="java.math.BigDecimal">
+		<property name="net.sf.jasperreports.json.field.expression" value="BestellingSubtotaal"/>
+		<fieldDescription><![CDATA[BestellingSubtotaal]]></fieldDescription>
+	</field>
+	<field name="BestellingPercentageGetrouwheidskorting" class="java.math.BigDecimal">
+		<property name="net.sf.jasperreports.json.field.expression" value="BestellingPercentageGetrouwheidskorting"/>
+		<fieldDescription><![CDATA[BestellingPercentageGetrouwheidskorting]]></fieldDescription>
+	</field>
+	<field name="BestellingBedragGetrouwheidskorting" class="java.math.BigDecimal">
+		<property name="net.sf.jasperreports.json.field.expression" value="BestellingBedragGetrouwheidskorting"/>
+		<fieldDescription><![CDATA[BestellingBedragGetrouwheidskorting]]></fieldDescription>
+	</field>
+	<field name="BestellingPercentageOrderkorting" class="java.math.BigDecimal">
+		<property name="net.sf.jasperreports.json.field.expression" value="BestellingPercentageOrderkorting"/>
+		<fieldDescription><![CDATA[BestellingPercentageOrderkorting]]></fieldDescription>
+	</field>
+	<field name="BestellingBedragOrderkorting" class="java.math.BigDecimal">
+		<property name="net.sf.jasperreports.json.field.expression" value="BestellingBedragOrderkorting"/>
+		<fieldDescription><![CDATA[BestellingBedragOrderkorting]]></fieldDescription>
+	</field>
+	<field name="BestellingBedragVerzendkosten" class="java.math.BigDecimal">
+		<property name="net.sf.jasperreports.json.field.expression" value="BestellingBedragVerzendkosten"/>
+		<fieldDescription><![CDATA[BestellingBedragVerzendkosten]]></fieldDescription>
+	</field>
+	<field name="BestellingTotaal" class="java.math.BigDecimal">
+		<property name="net.sf.jasperreports.json.field.expression" value="BestellingTotaal"/>
+		<fieldDescription><![CDATA[BestellingTotaal]]></fieldDescription>
+	</field>
+	<field name="BestellingMetActie" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[BestellingMetActie]]></fieldDescription>
+	</field>
+	<field name="BestellingMetGetrouwheidskorting" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[BestellingMetGetrouwheidskorting]]></fieldDescription>
+	</field>
+	<field name="BestellingMetOrderkorting" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[BestellingMetOrderkorting]]></fieldDescription>
+	</field>
+	<field name="BestellingPercentageArtikelkorting" class="java.math.BigDecimal">
+		<property name="net.sf.jasperreports.json.field.expression" value="BestellingPercentageArtikelkorting"/>
+		<fieldDescription><![CDATA[BestellingPercentageArtikelkorting]]></fieldDescription>
+	</field>
+	<field name="BestellingMetArtikelkorting" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[BestellingMetArtikelkorting]]></fieldDescription>
+	</field>
+	<field name="MuntCode" class="java.lang.String">
+		<fieldDescription><![CDATA[MuntCode]]></fieldDescription>
+	</field>
+	<field name="BestellingNalevering" class="java.lang.Boolean"/>
+	<field name="BestellingNaleveringText" class="java.lang.String">
+		<fieldDescription><![CDATA[BestellingNaleveringText]]></fieldDescription>
+	</field>
+	<field name="Txt_Totaal" class="java.lang.String"/>
+	<field name="BestellingCommentaar" class="java.lang.String">
+		<fieldDescription><![CDATA[BestellingCommentaar]]></fieldDescription>
+	</field>
+	<field name="BestellingBedragKortingscode" class="java.math.BigDecimal"/>
+	<field name="Txt_Kortingscode" class="java.lang.String"/>
+	<field name="BestellingKortingscode" class="java.lang.String"/>
+	<field name="BestellingPercentageKortingscode" class="java.math.BigDecimal"/>
+	<group name="Bestelling" keepTogether="true" preventOrphanFooter="true">
+		<groupExpression><![CDATA[$F{BestellingNummer}]]></groupExpression>
+		<groupHeader>
+			<band height="16">
+				<textField textAdjust="StretchHeight">
+					<reportElement x="20" y="0" width="204" height="16" uuid="75f7a9b1-2956-4cfe-8878-e132d07618ad">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="904908f4-5bde-471a-aa71-6b169882ba6f"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement>
+						<font fontName="Source Sans Pro"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{Txt_BestellingNummer} + ": " + $F{BestellingAard} + " " + $F{BestellingNummer} + " " + $F{BestellingDatum}]]></textFieldExpression>
+				</textField>
+				<textField textAdjust="StretchHeight">
+					<reportElement x="224" y="0" width="190" height="16" uuid="f472afb1-e552-48da-bc33-5b72792ac8d4">
+						<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="904908f4-5bde-471a-aa71-6b169882ba6f"/>
+					</reportElement>
+					<textElement>
+						<font fontName="Source Sans Pro"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{Txt_UwRef} + ": " + $F{BestellingReferentie}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="22">
+				<printWhenExpression><![CDATA[1==2]]></printWhenExpression>
+				<textField>
+					<reportElement x="337" y="6" width="76" height="16" uuid="69a2b141-e298-482c-81c5-4bce859c9d60">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement textAlignment="Center">
+						<font fontName="Source Sans Pro"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{Txt_Subtotaal}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="425" y="6" width="56" height="16" uuid="9e69593a-739a-41b8-a859-360d8f308b93">
+						<property name="com.jaspersoft.studio.unit.y" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+						<printWhenExpression><![CDATA[$F{BestellingTotaalNetto}.compareTo(new BigDecimal(0)) != 0]]></printWhenExpression>
+					</reportElement>
+					<textElement textAlignment="Right">
+						<font fontName="Source Sans Pro"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{MuntCode} + " " + new DecimalFormat("#,##0.00", new java.text.DecimalFormatSymbols(java.util.Locale.FRANCE)).format($F{BestellingTotaalNetto})]]></textFieldExpression>
+				</textField>
+			</band>
+			<band height="16">
+				<printWhenExpression><![CDATA[$F{BestellingBedragGetrouwheidskorting}.compareTo(new BigDecimal(0)) != 0]]></printWhenExpression>
+				<textField>
+					<reportElement x="337" y="0" width="76" height="16" uuid="84f46c62-7823-4657-ac64-262e030245d1">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement textAlignment="Center">
+						<font fontName="Source Sans Pro"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{Txt_Getrouwheidskorting} + " - " + $F{BestellingPercentageGetrouwheidskorting} + "%"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="425" y="0" width="56" height="16" uuid="7fb1dcc9-572e-4d0b-9318-76669470621d">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement textAlignment="Right">
+						<font fontName="Source Sans Pro"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{MuntCode} + " -" + new DecimalFormat("#,##0.00", new java.text.DecimalFormatSymbols(java.util.Locale.FRANCE)).format($F{BestellingBedragGetrouwheidskorting})]]></textFieldExpression>
+				</textField>
+			</band>
+			<band height="16">
+				<printWhenExpression><![CDATA[$F{BestellingBedragOrderkorting}.compareTo(new BigDecimal(0)) != 0]]></printWhenExpression>
+				<textField>
+					<reportElement x="337" y="0" width="76" height="16" uuid="4f7b4b13-fffd-4f7e-a97c-7c6745786cb0">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement textAlignment="Center">
+						<font fontName="Source Sans Pro"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{Txt_Orderkorting} + " - " + $F{BestellingPercentageOrderkorting} + "%"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="425" y="0" width="56" height="16" uuid="f9738cb7-5afe-4063-ad11-07a8cdddce0b">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement textAlignment="Right">
+						<font fontName="Source Sans Pro"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{MuntCode} + " -" + new DecimalFormat("#,##0.00", new java.text.DecimalFormatSymbols(java.util.Locale.FRANCE)).format($F{BestellingBedragOrderkorting})]]></textFieldExpression>
+				</textField>
+			</band>
+			<band height="16">
+				<printWhenExpression><![CDATA[$F{BestellingBedragKortingscode}.compareTo(new BigDecimal(0)) != 0]]></printWhenExpression>
+				<textField>
+					<reportElement x="337" y="0" width="76" height="16" uuid="249d527e-15de-444e-87cc-0d42df1f3d26">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement textAlignment="Center">
+						<font fontName="Source Sans Pro"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{Txt_Kortingscode} + " " + $F{BestellingKortingscode} + " - " + $F{BestellingPercentageKortingscode} + "%"]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="425" y="0" width="56" height="16" uuid="52fcbdad-0ff9-4d09-b67f-dc1442334197">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement textAlignment="Right">
+						<font fontName="Source Sans Pro"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{MuntCode} + " -" + new DecimalFormat("#,##0.00", new java.text.DecimalFormatSymbols(java.util.Locale.FRANCE)).format($F{BestellingBedragKortingscode})]]></textFieldExpression>
+				</textField>
+			</band>
+			<band height="16">
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<printWhenExpression><![CDATA[$F{BestellingBedragVerzendkosten}.compareTo(new BigDecimal(0)) != 0]]></printWhenExpression>
+				<textField>
+					<reportElement x="337" y="0" width="76" height="16" uuid="312dd703-642c-45d5-8460-a20c1c031a83">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement textAlignment="Center">
+						<font fontName="Source Sans Pro"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{Txt_Verzendkosten}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="425" y="0" width="56" height="16" uuid="dba86eaf-3643-4885-a02e-176e44143f9b">
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement textAlignment="Right">
+						<font fontName="Source Sans Pro"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{MuntCode} + " " + new DecimalFormat("#,##0.00", new java.text.DecimalFormatSymbols(java.util.Locale.FRANCE)).format($F{BestellingBedragVerzendkosten})]]></textFieldExpression>
+				</textField>
+			</band>
+			<band height="16">
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<textField>
+					<reportElement x="337" y="0" width="76" height="16" uuid="4a21b72e-36f1-4705-ad94-73647c45635e">
+						<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					</reportElement>
+					<textElement textAlignment="Center">
+						<font fontName="Source Sans Pro" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{Txt_Totaal}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="423" y="0" width="58" height="16" uuid="d01129ec-cb0a-4e10-aa7d-b1d30affc3a8">
+						<property name="com.jaspersoft.studio.unit.x" value="px"/>
+						<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					</reportElement>
+					<textElement textAlignment="Right">
+						<font fontName="Source Sans Pro" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{MuntCode} + " " + new DecimalFormat("#,##0.00", new java.text.DecimalFormatSymbols(java.util.Locale.FRANCE)).format($F{BestellingTotaal})]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupFooter>
+	</group>
+	<pageHeader>
+		<band height="24">
+			<textField>
+				<reportElement x="20" y="0" width="120" height="16" uuid="36b8eb3e-bd20-4f35-9e2a-c15839af449a">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Source Sans Pro" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Txt_ArtikelReferentie}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="244" y="0" width="57" height="16" uuid="1f7dea1c-5faa-4947-bb5e-4d9ae6dcd094">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Source Sans Pro" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Txt_Aantal}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="337" y="0" width="76" height="16" uuid="549887e3-8a30-487d-8cd7-3f449d0022e7">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Source Sans Pro" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Txt_Prijs}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="424" y="0" width="57" height="16" uuid="417bbccb-16f8-4562-8952-6fde7eea7c98">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Source Sans Pro" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Txt_Totaal}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="20" y="23" width="520" height="1" forecolor="#DAD6CD" uuid="693b025e-cb59-4c34-ae7d-096acc3143a9">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="16" splitType="Prevent">
+			<textField textAdjust="StretchHeight">
+				<reportElement x="20" y="0" width="120" height="16" uuid="8a3e4d4c-3ef5-4111-a080-1e886303248b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="904908f4-5bde-471a-aa71-6b169882ba6f"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Source Sans Pro"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ArtikelBlok}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="244" y="0" width="57" height="16" uuid="71f0e9a9-bbee-4a48-88af-d6b1cf968ea9">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Source Sans Pro"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{BestellingHoeveelheid}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="337" y="0" width="76" height="16" uuid="d18fe1fa-cfcb-4db5-979f-4837d831694f">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<printWhenExpression><![CDATA[$F{BestellingNalevering} == false]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Source Sans Pro"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{MuntCode} + " " + new DecimalFormat("#,##0.00", new java.text.DecimalFormatSymbols(java.util.Locale.FRANCE)).format($F{BestellingEenheidsprijs})]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="424" y="0" width="57" height="16" uuid="82e06e90-5661-4ea5-bd72-018c7526828a">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<printWhenExpression><![CDATA[$F{BestellingNalevering} == false && $F{BestellingNetto}.compareTo(new BigDecimal(0)) != 0]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Source Sans Pro"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{MuntCode} + " " + new DecimalFormat("#,##0.00", new java.text.DecimalFormatSymbols(java.util.Locale.FRANCE)).format($F{BestellingNetto})]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="16">
+			<printWhenExpression><![CDATA[$F{BestellingCommentaar}.compareTo(new String("")) != 0]]></printWhenExpression>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="19" y="0" width="523" height="16" uuid="3615d8eb-84b4-4b9d-825f-a57605b93c69">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="904908f4-5bde-471a-aa71-6b169882ba6f"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Source Sans Pro"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{BestellingCommentaar}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="4"/>
+	</detail>
+</jasperReport>
