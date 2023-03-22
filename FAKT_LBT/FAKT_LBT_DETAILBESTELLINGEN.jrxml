@@ -227,6 +227,7 @@
 	<field name="BestellingPercentageKortingscode" class="java.math.BigDecimal"/>
 	<field name="ArtikelOmschrijving" class="java.lang.String"/>
 	<field name="Txt_ArtikelOmschrijving" class="java.lang.String"/>
+	<field name="BestellingEenheid" class="java.lang.String"/>
 	<group name="Bestelling" keepTogether="true" preventOrphanFooter="true">
 		<groupExpression><![CDATA[$F{BestellingNummer}]]></groupExpression>
 		<groupHeader>
@@ -491,7 +492,7 @@
 				<textElement textAlignment="Center">
 					<font fontName="Source Sans Pro"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{BestellingHoeveelheid}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{BestellingHoeveelheid} + " " +$F{BestellingEenheid}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="296" y="0" width="57" height="16" uuid="d18fe1fa-cfcb-4db5-979f-4837d831694f">
@@ -501,7 +502,7 @@
 				<textElement textAlignment="Center">
 					<font fontName="Source Sans Pro"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{MuntCode} + " " + new DecimalFormat("#,##0.00", new java.text.DecimalFormatSymbols(java.util.Locale.FRANCE)).format($F{BestellingEenheidsprijs})]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{MuntCode} + " " + new DecimalFormat("#,##0.0000", new java.text.DecimalFormatSymbols(java.util.Locale.FRANCE)).format($F{BestellingEenheidsprijs})]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="492" y="0" width="50" height="16" uuid="ae8fa2ed-4b72-4756-a287-11a4f1366dd7">
